@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/iTonyYo/manual-sort.svg?branch=master)](https://travis-ci.org/iTonyYo/manual-sort) [![Coverage Status](https://coveralls.io/repos/github/iTonyYo/manual-sort/badge.svg?branch=master)](https://coveralls.io/github/iTonyYo/manual-sort?branch=master) [![dependencies Status](https://david-dm.org/iTonyYo/manual-sort/status.svg)](https://david-dm.org/iTonyYo/manual-sort)
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/c906cffa9e92486cafc7a5f72187a79d)](https://www.codacy.com/app/swzyocowboy/manual-sort?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=iTonyYo/manual-sort&amp;utm_campaign=Badge_Grade) [![Build Status](https://travis-ci.org/iTonyYo/manual-sort.svg?branch=master)](https://travis-ci.org/iTonyYo/manual-sort) [![Coverage Status](https://coveralls.io/repos/github/iTonyYo/manual-sort/badge.svg?branch=master)](https://coveralls.io/github/iTonyYo/manual-sort?branch=master) [![dependencies Status](https://david-dm.org/iTonyYo/manual-sort/status.svg)](https://david-dm.org/iTonyYo/manual-sort)
 
 # `manualSort()`
 
@@ -105,7 +105,5 @@ yarn test
 - [ ] 自动化发布；
 
 - [ ] `reconstruct` 指令
-
-- [ ] 使用 [Codacy](https://www.codacy.com/) 实现代码质量检测；
 
 - [ ] 编写 [`SETUP.md`]()；
