@@ -1,3 +1,4 @@
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/287dcca0ce554a15b8a55daffacd72d2)](https://app.codacy.com/app/swzyocowboy/manual-sort?utm_source=github.com&utm_medium=referral&utm_content=iTonyYo/manual-sort&utm_campaign=Badge_Grade_Dashboard)
 [![dependencies Status](https://david-dm.org/iTonyYo/manual-sort/status.svg)](https://david-dm.org/iTonyYo/manual-sort)
 
 # `manualSort()`
