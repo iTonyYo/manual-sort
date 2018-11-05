@@ -43,14 +43,20 @@ const { manualSort } = require('manual-sort');
 // const manualSort = require('manual-sort/esm');
 
 (async function() {
-  const sorted = await manualSort({
-    data: data2, // [ 1, [ 1, 2, 3 ], 'loaded', null ]
-    fromIndex: 2,
-    toIndex: 1,
-  });
+  try {
+    const data2 = [ 1, [ 1, 2, 3 ], 'loaded', null ];
 
-  console.log(sorted);
-  // [ 1, 'loaded', [ 1, 2, 3 ], null ]
+    const sorted = await manualSort({
+      data: data2,
+      fromIndex: 2,
+      toIndex: 1,
+    });
+
+    console.log(sorted);
+    // [ 1, 'loaded', [ 1, 2, 3 ], null ]
+  } catch(err) {
+    throw err;
+  }
 })();
 ```
 
@@ -60,8 +66,10 @@ const { manualSort } = require('manual-sort');
 const { manualSortSync } = require('manual-sort');
 // const manualSortSync = require('manual-sort/esm-sync');
 
+const data2 = [ 1, [ 1, 2, 3 ], 'loaded', null ];
+
 const rslt = manualSortSync({
-  data: data2, // [ 1, [ 1, 2, 3 ], 'loaded', null ]
+  data: data2,
   fromIndex: 2,
   toIndex: 1,
 });
