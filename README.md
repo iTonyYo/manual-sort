@@ -1,3 +1,5 @@
+[![dependencies Status](https://david-dm.org/iTonyYo/manual-sort/status.svg)](https://david-dm.org/iTonyYo/manual-sort)
+
 # `manualSort()`
 
 手动排序数组，如：
@@ -103,8 +105,6 @@ yarn test
 - [ ] 自动化发布；
 
 - [ ] `reconstruct` 指令
-
-- [ ] 使用 [David DM](https://david-dm.org/) 实现 `依赖是否最新` 检测；
 
 - [ ] 使用 [Travis CI](https://travis-ci.org/) 实现持续集成；
 
