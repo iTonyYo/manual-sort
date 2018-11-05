@@ -1,4 +1,4 @@
-[![dependencies Status](https://david-dm.org/iTonyYo/manual-sort/status.svg)](https://david-dm.org/iTonyYo/manual-sort)
+[![Build Status](https://travis-ci.org/iTonyYo/manual-sort.svg?branch=master)](https://travis-ci.org/iTonyYo/manual-sort) [![dependencies Status](https://david-dm.org/iTonyYo/manual-sort/status.svg)](https://david-dm.org/iTonyYo/manual-sort)
 
 # `manualSort()`
 
@@ -105,8 +105,6 @@ yarn test
 - [ ] 自动化发布；
 
 - [ ] `reconstruct` 指令
-
-- [ ] 使用 [Travis CI](https://travis-ci.org/) 实现持续集成；
 
 - [ ] 使用 [Coveralls](https://coveralls.io/) 可视化测试用例覆盖率；
 
