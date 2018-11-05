@@ -1,0 +1,20 @@
+{
+  "check-coverage": false,
+  "per-file": true,
+  "reporter": [
+    "html"
+  ],
+  "report-dir": "./coverage",
+  "cache": false,
+  "include": [
+    "esm.js",
+    "esm-sync.js",
+    "umd.js",
+    "umd-sync.js",
+    "manual-sort.js",
+    "manual-sort-sync.js"
+  ],
+  "skip-empty": true,
+  "skip-full": true,
+  "clean": true
+}

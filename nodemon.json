@@ -1,0 +1,22 @@
+{
+  "events": {
+    "restart": "node ./scripts/clear-console"
+  },
+  "ignore": [
+    ".git",
+    "node_modules/**/node_modules",
+    "coverage"
+  ],
+  "execMap": {
+    "js": "node --harmony"
+  },
+  "watch": [
+    "debug.js",
+    "manual-sort.js",
+    "manual-sort-sync.js"
+  ],
+  "env": {
+    "NODE_ENV": "development"
+  },
+  "ext": "js,json"
+}

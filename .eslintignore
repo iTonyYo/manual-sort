@@ -1,0 +1,14 @@
+*-test.js
+
+esm.js
+esm-sync.js
+
+umd.js
+umd-sync.js
+
+scripts/**
+coverage/**
+
+debug.js
+
+test.babel.js
