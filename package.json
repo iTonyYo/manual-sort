@@ -7,6 +7,7 @@
     "babel-build-async-src": "npx babel -o ./esm.js manual-sort.js",
     "webpack-build": "npx webpack",
     "test": "npx nyc mocha ./test.babel.js ./*-test.js --opts ./mocha.opts",
+    "coverage": "npx nyc report --reporter=text-lcov | npx coveralls",
     "lint": "npx eslint --cache manual-sort.js manual-sort-sync.js",
     "license": "node ./scripts/license"
   },
