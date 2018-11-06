@@ -15,6 +15,5 @@
     "manual-sort-sync.js"
   ],
   "skip-empty": true,
-  "skip-full": true,
-  "clean": true
+  "skip-full": true
 }
