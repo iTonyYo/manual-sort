@@ -60,7 +60,7 @@ const manualSort = ({
     reject(new Error('`from` 和 `to` 两者或之一无效'));
   }
 
-  let sortedTemp
+  let sortedTemp;
 
   if ($from.idx < $to.idx) {
     const interval = slice(temp, $from.idx, $to.idx + 1);
