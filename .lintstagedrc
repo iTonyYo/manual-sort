@@ -1,5 +1,6 @@
 {
   "*.js": [
+    "yarn test",
     "yarn lint",
   ]
 }
