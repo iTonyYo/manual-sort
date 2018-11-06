@@ -17,7 +17,7 @@ module.exports = {
       commonjs2: 'lodash',
       amd: 'lodash',
       root: '_',
-    }
+    },
   },
   module: {
     rules: [

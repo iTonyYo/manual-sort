@@ -1,6 +1,6 @@
 {
   "events": {
-    "restart": "node ./scripts/clear-console"
+    "restart": "node ./scripts/clean-console"
   },
   "ignore": [
     ".git",

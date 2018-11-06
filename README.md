@@ -112,6 +112,4 @@ yarn test
 
 - [ ] 自动化发布；
 
-- [ ] `reconstruct` 指令
-
 - [ ] 编写 [`SETUP.md`]()；

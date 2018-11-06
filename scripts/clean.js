@@ -1,14 +1,16 @@
-const trash          = require('trash');
+const execa = require('execa');
+
 const { resolveApp } = require('./util');
+const scriptsDir = resolveApp('scripts');
 
-trash([
-  resolveApp('esm.js'),
-  resolveApp('esm-sync.js'),
+execa('node', [
+  `${scriptsDir}/clean-built.js`
+]);
 
-  resolveApp('umd.js'),
-  resolveApp('umd-sync.js'),
+execa('node', [
+  `${scriptsDir}/clean-reports.js`
+]);
 
-  resolveApp('.nyc_output'),
-  resolveApp('.eslintcache'),
-  resolveApp('coverage'),
+execa('node', [
+  `${scriptsDir}/clean-cache.js`
 ]);
