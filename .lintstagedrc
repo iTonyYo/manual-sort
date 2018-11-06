@@ -1,8 +1,4 @@
 {
-  "*": [
-    "yarn test"
-  ],
-
   "*.js": [
     "yarn lint",
   ]
