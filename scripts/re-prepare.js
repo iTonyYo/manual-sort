@@ -15,7 +15,7 @@ const tasks = new Listr([
   {
     title: '清理测试报告等',
     task: () => execa('node', [
-      `${scriptsDir}/clear-reports.js`
+      `${scriptsDir}/clean-reports.js`
     ])
   },
 

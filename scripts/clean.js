@@ -8,7 +8,7 @@ execa('node', [
 ]);
 
 execa('node', [
-  `${scriptsDir}/clear-reports.js`
+  `${scriptsDir}/clean-reports.js`
 ]);
 
 execa('node', [
