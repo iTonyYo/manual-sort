@@ -6,13 +6,6 @@ const scriptsDir = resolveApp('scripts');
 
 const tasks = new Listr([
   {
-    title: '清理生产构建',
-    task: () => execa('node', [
-      `${scriptsDir}/clean-built.js`
-    ])
-  },
-
-  {
     title: '清理测试报告等',
     task: () => execa('node', [
       `${scriptsDir}/clean-reports.js`
