@@ -1,0 +1,6 @@
+{
+  "lint-staged": {
+    "manual-sort.js": "npx eslint --cache",
+    "manual-sort-sync.js": "npx eslint --cache",
+  }
+}
