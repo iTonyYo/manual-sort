@@ -1,7 +1,16 @@
 {
   "linters": {
-    "manual-sort.js": ["npx eslint --cache"],
-    "manual-sort-sync.js": ["npx eslint --cache"],
+    "manual-sort.js": [
+      "npx eslint --cache",
+      "yarn test"
+    ],
+    "manual-sort-sync.js": [
+      "npx eslint --cache",
+      "yarn test"
+    ],
   },
-  "ignore": ["**/scripts/*.js"]
+  "ignore": [
+    "**/scripts/**",
+    "**/coverage/**"
+  ]
 }
