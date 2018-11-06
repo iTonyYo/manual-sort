@@ -46,7 +46,7 @@ const manualSort = ({
   data,
   fromIndex,
   toIndex,
-}) => (new Promise((resolve, reject) => {
+}) => new Promise((resolve, reject) => {
   if (!isArray(data) || isEmpty(data)) {
     reject(new Error('有效的数据是必须的'));
   }
@@ -91,6 +91,6 @@ const manualSort = ({
   }
 
   resolve(removeIndex(sortedTemp));
-}));
+});
 
 export default manualSort;
