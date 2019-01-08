@@ -12,11 +12,60 @@ module.exports = {
     globalObject: 'this',
   },
   externals: {
-    lodash: {
-      commonjs: 'lodash',
-      commonjs2: 'lodash',
-      amd: 'lodash',
-      root: '_',
+    'lodash/slice': {
+      commonjs: 'lodash/slice',
+      commonjs2: 'lodash/slice',
+      amd: 'lodash/slice',
+    },
+    'lodash/concat': {
+      commonjs: 'lodash/concat',
+      commonjs2: 'lodash/concat',
+      amd: 'lodash/concat',
+    },
+    'lodash/isArray': {
+      commonjs: 'lodash/isArray',
+      commonjs2: 'lodash/isArray',
+      amd: 'lodash/isArray',
+    },
+    'lodash/isEmpty': {
+      commonjs: 'lodash/isEmpty',
+      commonjs2: 'lodash/isEmpty',
+      amd: 'lodash/isEmpty',
+    },
+    'lodash/forEach': {
+      commonjs: 'lodash/forEach',
+      commonjs2: 'lodash/forEach',
+      amd: 'lodash/forEach',
+    },
+    'lodash/merge': {
+      commonjs: 'lodash/merge',
+      commonjs2: 'lodash/merge',
+      amd: 'lodash/merge',
+    },
+    'lodash/size': {
+      commonjs: 'lodash/size',
+      commonjs2: 'lodash/size',
+      amd: 'lodash/size',
+    },
+    'lodash/times': {
+      commonjs: 'lodash/times',
+      commonjs2: 'lodash/times',
+      amd: 'lodash/times',
+    },
+    'lodash/stubObject': {
+      commonjs: 'lodash/stubObject',
+      commonjs2: 'lodash/stubObject',
+      amd: 'lodash/stubObject',
+    },
+    'lodash/stubArray': {
+      commonjs: 'lodash/stubArray',
+      commonjs2: 'lodash/stubArray',
+      amd: 'lodash/stubArray',
+    },
+    'lodash/get': {
+      commonjs: 'lodash/get',
+      commonjs2: 'lodash/get',
+      amd: 'lodash/get',
     },
   },
   module: {

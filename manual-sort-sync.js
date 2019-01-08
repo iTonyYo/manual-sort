@@ -1,16 +1,14 @@
-import {
-  slice,
-  concat,
-  isArray,
-  isEmpty,
-  forEach,
-  merge,
-  size,
-  times,
-  stubObject,
-  stubArray,
-  get,
-} from 'lodash';
+import slice from 'lodash/slice';
+import concat from 'lodash/concat';
+import isArray from 'lodash/isArray';
+import isEmpty from 'lodash/isEmpty';
+import forEach from 'lodash/forEach';
+import merge from 'lodash/merge';
+import size from 'lodash/size';
+import times from 'lodash/times';
+import stubObject from 'lodash/stubObject';
+import stubArray from 'lodash/stubArray';
+import get from 'lodash/get';
 
 const presetIndex = (data) => {
   const temp = times(size(data), stubObject);
