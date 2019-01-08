@@ -26,11 +26,11 @@ var removeIndex = function removeIndex(data) {
   return temp;
 };
 /**
- * TODO: 图示其中算法
+ * TODO: 图示算法
  *
  * @param {Array} data - 待操作的数据
- * @param {Object} fromIndex - 开始位置
- * @param {Object} toIndex - 目标位置
+ * @param {Number} fromIndex - 开始位置
+ * @param {Number} toIndex - 目标位置
  */
 
 

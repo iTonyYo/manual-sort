@@ -39,8 +39,8 @@ const removeIndex = (data) => {
  * TODO: 图示算法
  *
  * @param {Array} data - 待操作的数据
- * @param {Object} fromIndex - 开始位置
- * @param {Object} toIndex - 目标位置
+ * @param {Number} fromIndex - 开始位置
+ * @param {Number} toIndex - 目标位置
  */
 const manualSort = ({
   data,
