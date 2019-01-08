@@ -10,5 +10,3 @@ scripts/**
 coverage/**
 
 debug.js
-
-test.babel.js
