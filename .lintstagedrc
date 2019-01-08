@@ -11,6 +11,8 @@
   },
   "ignore": [
     "**/scripts/**",
-    "**/coverage/**"
+    "**/coverage/**",
+    "**/.vscode/**",
+    "**/.github/**"
   ]
 }
