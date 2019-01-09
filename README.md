@@ -144,7 +144,7 @@ yarn test
 - [X] 捆绑 [Git 倒钩][Git倒钩]；
 - [X] ESlint 检测；
 - [X] 自动化生成所有依赖的开源证书；
-- [X] 自动化发布；
+- [ ] 自动化发布；
 - [X] 使用 [David DM][DavidDM] 实现 `依赖是否最新` 检测；
 - [X] 使用 [Travis CI][TravisCI] 实现持续集成；
 - [X] 使用 [Coveralls][Coveralls] 可视化测试用例覆盖率；
