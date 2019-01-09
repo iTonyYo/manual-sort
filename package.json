@@ -20,7 +20,8 @@
     "test": "npx nyc mocha --opts ./mocha.opts ./*-test.js",
     "coverage": "npx nyc report --reporter=text-lcov | npx coveralls",
     "lint": "npx eslint --cache manual-sort.js manual-sort-sync.js",
-    "license": "npx babel-node ./scripts/license"
+    "license": "npx babel-node ./scripts/license",
+    "changelog": "npx auto-changelog -p"
   },
   "keywords": [
     "手动排序",
