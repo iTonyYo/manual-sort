@@ -1,0 +1,10 @@
+{
+  "output": "CHANGELOG.md",
+  "template": "changelog-template.hbs",
+  "unreleased": false,
+  "commitLimit": false,
+  "includeBranch": [
+    "master",
+    "develop"
+  ]
+}
