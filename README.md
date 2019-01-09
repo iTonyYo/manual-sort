@@ -13,7 +13,7 @@
 ]
 ```
 
-将上面数组中 `null` 放置在 `[1, 2, 3]` 的位置，即：将第 4 位移动到第 2 位，得到下面新的数组：
+将上面数组中 `null` 放置在 `[1, 2, 3]` 的位置，即：将第 4 位移动到第 2 位 *(注意，并非对调位置)*，得到下面新的数组：
 
 ```javascript
 [
@@ -24,7 +24,7 @@
 ]
 ```
 
-> 注意：并非对调位置。
+[`@oopsunome/manual-sort`][@oopsunome/manual-sort] **支持在浏览器以及 Node.js 环境下使用**。Node.js 方面，持续且仅支持最新 LTS 版本的。
 
 ## 目录
 
@@ -137,37 +137,39 @@ yarn test
 ## 待办
 
 - [X] 支持 `解构` 或 `直接引用` 2 种暴露接口的方式；
-
 - [X] 提供同步、异步 2 种编程方式，异步编程采用 `Promise`；
-
 - [X] 支持构建 `CommonJS`, `AMD`, `ESM`, `UMD` 模式的模块；
-
 - [X] 不将 `lodash` 等库打包；
-
 - [X] 功能测试；
-
+- [X] 捆绑 [Git 倒钩][Git倒钩]；
+- [X] ESlint 检测；
+- [X] 自动化生成所有依赖的开源证书；
+- [X] 自动化发布；
+- [X] 使用 [David DM][DavidDM] 实现 `依赖是否最新` 检测；
+- [X] 使用 [Travis CI][TravisCI] 实现持续集成；
+- [X] 使用 [Coveralls][Coveralls] 可视化测试用例覆盖率；
+- [X] 使用 [Codacy][Codacy] 实现代码质量检测；
+- [ ] 在什么场景下使用 [`@oopsunome/manual-sort`][@oopsunome/manual-sort]?
+- [ ] 编写 [开发环境指南][SETUP.md]；
+- [ ] 文档：在哪里可以获得更多帮助？
+- [ ] 文档：设计思想；
+- [ ] 文档：维护策略；
+- [ ] 文档：[编码风格指南][编码风格指南]；
+- [ ] 编写 [发布流程指南][发布流程指南]；
+- [ ] 编写 [Git 指南][Git指南]；
+- [ ] 编写 [命名指南][命名指南]；
+- [ ] 编写 [版本指南][版本指南]；
+- [X] 更新日志；
+- [ ] 谁在使用 [`@oopsunome/manual-sort`][@oopsunome/manual-sort]?
 - [ ] 性能测试；
 
-- [X] 捆绑 [Git 倒钩][Git倒钩]；
-
-- [X] ESlint 检测；
-
-- [X] 自动化生成所有依赖的开源证书；
-
-- [X] 自动化发布；
-
-- [X] 使用 [David DM][DavidDM] 实现 `依赖是否最新` 检测；
-
-- [X] 使用 [Travis CI][TravisCI] 实现持续集成；
-
-- [X] 使用 [Coveralls][Coveralls] 可视化测试用例覆盖率；
-
-- [X] 使用 [Codacy][Codacy] 实现代码质量检测；
-
-- [ ] 编写 [`SETUP.md`][SETUP.md]；
 
 
-
+[编码风格指南]: #
+[版本指南]: #
+[命名指南]: #
+[Git指南]: #
+[发布流程指南]: #
 [Git倒钩]: https://github.com/typicode/husky
 [DavidDM]: https://david-dm.org/
 [TravisCI]: https://travis-ci.org/
