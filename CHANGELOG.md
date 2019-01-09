@@ -1,9 +1,11 @@
 # [`@oopsunome/manual-sort`](https://github.com/iTonyYo/manual-sort) 更新日志
 
-## [1.0.2](https://github.com/iTonyYo/manual-sort/compare/v1.0.1...1.0.2) - 2019-01-09
+## [v1.0.2](https://github.com/iTonyYo/manual-sort/compare/v1.0.1...v1.0.2) - 2019-01-09
 
 #### 提交
 
+- [[`06d105e`](https://github.com/iTonyYo/manual-sort/commit/06d105e89577c0f59162ff07c23d9cb47bb35497)] 工程: :clapper: 修改更新日志配置，在打 Git 标签前生成更新日志
+- [[`ab53d13`](https://github.com/iTonyYo/manual-sort/commit/ab53d13a25db9e11bd80d219f8094576456394bb)] 工程: :clapper: 根据 package.json 中的版本生成更新日志
 - [[`7e53e29`](https://github.com/iTonyYo/manual-sort/commit/7e53e29b26ea7435448b72e3876fc8674670b96c)] 文档: :memo: 更新文档
 ## [v1.0.1](https://github.com/iTonyYo/manual-sort/compare/v1.0.0...v1.0.1) - 2019-01-09
 
