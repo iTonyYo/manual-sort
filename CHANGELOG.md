@@ -1,5 +1,10 @@
 # [`@oopsunome/manual-sort`](https://github.com/iTonyYo/manual-sort) 更新日志
 
+## [1.0.2](https://github.com/iTonyYo/manual-sort/compare/v1.0.1...1.0.2) - 2019-01-09
+
+#### 提交
+
+- [[`7e53e29`](https://github.com/iTonyYo/manual-sort/commit/7e53e29b26ea7435448b72e3876fc8674670b96c)] 文档: :memo: 更新文档
 ## [v1.0.1](https://github.com/iTonyYo/manual-sort/compare/v1.0.0...v1.0.1) - 2019-01-09
 
 #### 提交

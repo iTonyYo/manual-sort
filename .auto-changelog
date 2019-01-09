@@ -1,7 +1,7 @@
 {
   "output": "CHANGELOG.md",
   "template": "changelog-template.hbs",
-  "unreleased": false,
+  "unreleased": true,
   "commitLimit": false,
   "includeBranch": [
     "master",
