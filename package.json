@@ -28,6 +28,7 @@
     "manualSort",
     "排序",
     "sort",
+    "sorting",
     "数组",
     "array",
     "modules",
@@ -35,7 +36,10 @@
     "工具函数",
     "util",
     "utilities",
-    "library"
+    "helper",
+    "library",
+    "algorithm",
+    "oopsunome"
   ],
   "peerDependencies": {
     "lodash": "^4.17.11"
