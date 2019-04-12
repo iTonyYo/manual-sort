@@ -1,10 +1,10 @@
 import { assert } from 'chai';
 import { data2 } from './data';
 
-const {
+import {
   manualSort,
   manualSortSync,
-} = require('./index');
+} from './index';
 
 setTimeout(() => {
   describe('esm', () => {

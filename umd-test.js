@@ -1,8 +1,8 @@
 import { assert } from 'chai';
 import { data2 } from './data';
 
-const manualSort = require('./umd');
-const manualSortSync = require('./umd-sync');
+import manualSort from './umd';
+import manualSortSync from './umd-sync';
 
 setTimeout(() => {
   describe('umd', () => {
