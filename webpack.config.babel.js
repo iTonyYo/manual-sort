@@ -1,11 +1,13 @@
+import { join } from 'path';
+
 module.exports = {
   mode: 'production',
   entry: {
-    umd: './esm.js',
-    'umd-sync': './esm-sync.js',
+    'manual-sort': './esm/manual-sort.js',
+    'manual-sort-sync': './esm/manual-sort-sync.js',
   },
   output: {
-    path: __dirname,
+    path: join(__dirname, 'umd'),
     filename: '[name].js',
     library: '[name]',
     libraryTarget: 'umd',

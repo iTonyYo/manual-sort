@@ -12,8 +12,7 @@
   },
   "watch": [
     "debug.js",
-    "manual-sort.js",
-    "manual-sort-sync.js"
+    "src/**/*.js"
   ],
   "env": {
     "NODE_ENV": "development"

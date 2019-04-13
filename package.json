@@ -2,9 +2,9 @@
   "main": "index.js",
   "files": [
     "index.js",
-    "esm.js",
-    "esm-sync.js",
-    "umd.js",
+    "esm/**/*.js",
+    "umd/**/*.js",
+    "src/**/*.js"
     "umd-sync.js",
     "manual-sort.js",
     "manual-sort-sync.js"
@@ -16,10 +16,9 @@
     "build": "npx babel-node ./scripts/clean-built && yarn babel-build-sync-src && yarn babel-build-async-src && yarn webpack-build",
     "babel-build-sync-src": "npx babel -o ./esm-sync.js manual-sort-sync.js",
     "babel-build-async-src": "npx babel -o ./esm.js manual-sort.js",
-    "webpack-build": "npx webpack",
     "test": "npx nyc mocha --require @babel/register --no-opts --no-package ./*-test.js",
     "coverage": "npx nyc report --reporter=text-lcov | npx coveralls",
-    "lint": "npx eslint --cache manual-sort.js manual-sort-sync.js",
+    "lint": "npx eslint --cache ./src/**/*.js",
     "license": "npx babel-node ./scripts/license",
     "changelog": "npx auto-changelog -p"
   },

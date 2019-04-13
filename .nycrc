@@ -7,12 +7,9 @@
   "report-dir": "./coverage",
   "cache": false,
   "include": [
-    "esm.js",
-    "esm-sync.js",
-    "umd.js",
-    "umd-sync.js",
-    "manual-sort.js",
-    "manual-sort-sync.js"
+    "esm/**/*.js",
+    "umd/**/*.js",
+    "src/**/*.js"
   ],
   "skip-empty": true,
   "skip-full": true

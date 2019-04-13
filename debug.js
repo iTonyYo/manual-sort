@@ -2,8 +2,8 @@ require('@babel/register')();
 
 const chalk = require('chalk');
 const { data2 } = require('./data');
-const manualSortSync = require('./manual-sort-sync');
-const manualSort = require('./manual-sort');
+const manualSortSync = require('./src/manual-sort-sync');
+const manualSort = require('./src/manual-sort');
 
 /**
  * manualSort()

@@ -1,10 +1,10 @@
 import { assert } from 'chai';
-import { data2 } from './data';
+import { data2 } from '../data';
 
 import {
   manualSort,
   manualSortSync,
-} from './index';
+} from '../index';
 
 setTimeout(() => {
   describe('esm', () => {

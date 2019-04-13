@@ -1,10 +1,7 @@
-*-test.js
+test
 
-esm.js
-esm-sync.js
-
-umd.js
-umd-sync.js
+esm
+umd
 
 scripts/**
 coverage/**

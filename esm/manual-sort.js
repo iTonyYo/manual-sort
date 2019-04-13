@@ -56,48 +56,49 @@ var removeIndex = function removeIndex(data) {
  */
 
 
-var manualSortSync = function manualSortSync(_ref) {
+var manualSort = function manualSort(_ref) {
   var data = _ref.data,
       fromIndex = _ref.fromIndex,
       toIndex = _ref.toIndex;
+  return new Promise(function (resolve, reject) {
+    if (!(0, _isArray.default)(data) || (0, _isEmpty.default)(data)) {
+      reject(new Error('有效的数据是必须的'));
+    }
 
-  if (!(0, _isArray.default)(data) || (0, _isEmpty.default)(data)) {
-    throw new Error('有效的数据是必须的');
-  }
+    var temp = presetIndex(data);
+    var $from = temp[fromIndex];
+    var $to = temp[toIndex];
 
-  var temp = presetIndex(data);
-  var $from = temp[fromIndex];
-  var $to = temp[toIndex];
+    if ((0, _isEmpty.default)($from) || (0, _isEmpty.default)($to)) {
+      reject(new Error('`from` 和 `to` 两者或之一无效'));
+    }
 
-  if ((0, _isEmpty.default)($from) || (0, _isEmpty.default)($to)) {
-    throw new Error('`from` 和 `to` 两者或之一无效');
-  }
+    var sortedTemp;
 
-  var sortedTemp;
+    if ($from.idx < $to.idx) {
+      var interval = (0, _slice.default)(temp, $from.idx, $to.idx + 1);
+      var beforeInterval = (0, _slice.default)(temp, 0, $from.idx);
+      var afterInterval = (0, _slice.default)(temp, $to.idx + 1);
+      var intervalWitoutFrom = (0, _slice.default)(interval, 1);
+      sortedTemp = (0, _concat.default)(beforeInterval, intervalWitoutFrom, $from, afterInterval);
+    }
 
-  if ($from.idx < $to.idx) {
-    var interval = (0, _slice.default)(temp, $from.idx, $to.idx + 1);
-    var beforeInterval = (0, _slice.default)(temp, 0, $from.idx);
-    var afterInterval = (0, _slice.default)(temp, $to.idx + 1);
-    var intervalWitoutFrom = (0, _slice.default)(interval, 1);
-    sortedTemp = (0, _concat.default)(beforeInterval, intervalWitoutFrom, $from, afterInterval);
-  }
+    if ($from.idx > $to.idx) {
+      var _interval = (0, _slice.default)(temp, $to.idx, $from.idx + 1);
 
-  if ($from.idx > $to.idx) {
-    var _interval = (0, _slice.default)(temp, $to.idx, $from.idx + 1);
+      var _beforeInterval = (0, _slice.default)(temp, 0, $to.idx);
 
-    var _beforeInterval = (0, _slice.default)(temp, 0, $to.idx);
+      var _afterInterval = (0, _slice.default)(temp, $from.idx + 1);
 
-    var _afterInterval = (0, _slice.default)(temp, $from.idx + 1);
+      var _intervalWitoutFrom = (0, _slice.default)(_interval, 0, _interval.length - 1);
 
-    var _intervalWitoutFrom = (0, _slice.default)(_interval, 0, _interval.length - 1);
+      sortedTemp = (0, _concat.default)(_beforeInterval, $from, _intervalWitoutFrom, _afterInterval);
+    }
 
-    sortedTemp = (0, _concat.default)(_beforeInterval, $from, _intervalWitoutFrom, _afterInterval);
-  }
-
-  return removeIndex(sortedTemp);
+    resolve(removeIndex(sortedTemp));
+  });
 };
 
-var _default = manualSortSync;
+var _default = manualSort;
 exports.default = _default;
 module.exports = exports.default;

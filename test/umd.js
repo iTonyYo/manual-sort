@@ -1,8 +1,8 @@
 import { assert } from 'chai';
-import { data2 } from './data';
+import { data2 } from '../data';
 
-import manualSort from './umd';
-import manualSortSync from './umd-sync';
+import manualSort from '../umd/manual-sort';
+import manualSortSync from '../umd/manual-sort-sync';
 
 setTimeout(() => {
   describe('umd', () => {

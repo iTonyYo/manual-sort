@@ -1,5 +1,5 @@
-const manualSort = require('./esm');
-const manualSortSync = require('./esm-sync');
+const manualSort = require('./esm/manual-sort');
+const manualSortSync = require('./esm/manual-sort-sync');
 
 module.exports = {
   manualSort,
