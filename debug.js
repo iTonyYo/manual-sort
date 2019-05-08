@@ -8,7 +8,7 @@ const manualSort = require('./src/manual-sort');
 /**
  * manualSort()
  */
-console.log(chalk `{grey {bold manualSort()}, 移动第 3 位到第 2 位:}`);
+console.log(chalk `{grey {bold manualSort()}, [1, [1, 2, 3], 'loaded', null], 移动第 3 位到第 2 位:}`);
 console.log(data2);
 console.log(`\n`);
 
@@ -29,7 +29,7 @@ manualSort({
 /**
  * manualSortSync()
  */
-console.log(chalk `{grey {bold manualSortSync()}, 移动第 3 位到第 2 位:}`);
+console.log(chalk `{grey {bold manualSortSync()}, [1, [1, 2, 3], 'loaded', null], 移动第 3 位到第 2 位:}`);
 console.log(data2);
 console.log(`\n`);
 
